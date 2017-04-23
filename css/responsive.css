@@ -1,0 +1,186 @@
+/*
+    Theme Responsive Design
+*/
+
+@media (max-width: 1024px) {
+	h1{
+		font-size: 40px;
+	}
+	.download_moc img {
+		width: 88%;
+		top: -157px;
+		left: 0;
+	}
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    ul.nav > li > a {
+        font-size: 12px;
+        line-height: 70px;
+        padding: 0 10px;
+    }
+	h1{
+		font-size: 30px;
+	}
+	.hero_section{
+		height: 600px;
+	}
+	.hero_moc_front {
+		width: 80%;
+		top: -70px;
+	}
+	.hero_moc_back {
+		left: 130px;
+		top: -28px;
+	}
+	.hero_content p br{
+		display: none;
+	}
+	.feature_head{
+		padding: 0;
+	}
+    .download_moc img {
+		width: 113%;
+		top: -150px;
+		left: -15px;
+	}
+	.subscribe_form .submit {
+		padding: 0 10px;
+	}
+
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .mb-40{
+        margin-bottom: 30px;
+    }
+	.btn_default{
+		line-height: 35px;
+		padding: 0 15px;
+		font-size: 12px;
+	}
+	.navbar-header{
+		padding: 8px 35px;
+	}
+	.scrollActive .navbar-header{
+		padding: 5px 35px;
+	}
+    .navbar-header .brand {
+        display: block;
+    }
+    .navbar-collapse {
+        background-color: #481f75;
+        border-top: medium none;
+        box-shadow: none;
+        margin-top: 0px;
+        overflow-x: visible;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    ul.nav{
+        margin: 0;
+        overflow: hidden;
+    }
+    ul.nav > li{
+        display: block;
+        margin: 0;
+    }
+    ul.nav > li > a{
+        display: block;
+        font-size: 14px;
+        color: #fff;
+        line-height: 60px;
+        padding: 0 30px;
+    }
+    ul.nav > li > a:hover,
+    ul.nav > li.active > a {
+        color: #fff;
+    }
+	.hero_section{
+		height: 400px;
+	}
+	.promo_items .col-sm-4{
+		float: left;
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.feature_head {
+		padding: 0;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	.feature_head h2 br{
+		display: none;
+	}
+	.footer_section{
+		text-align: center;
+	}
+	.footer_section .col-sm-7{
+		margin-bottom: 30px;
+	}
+    .scroll-to-top{
+        display: none !important;
+    }
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 480px CSS ---- */
+@media all and (max-width: 480px) {
+	h1{
+		font-size: 26px;
+	}
+	.promo_items .col-sm-4{
+		float: none;
+		width: 100%;
+	}
+	.promo_items .col-sm-4:last-child{
+		margin-bottom: 0;
+	}
+	.slick-slide img {
+		margin: 0 auto;
+	}
+
+}
+/* ---- End of max-width 480px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+	h1{
+		font-size: 20px;
+	}
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+	
+}
+/* ---- End of max-width 380px CSS ---- */

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Veneno" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Veneno" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libws2_32.a" />
+					<Add library="../../../../../../../../Program Files (x86)/CodeBlocks/MinGW/lib/libwsock32.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Veneno" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/ArrayList.h" />
+		<Unit filename="include/ArrayListN.h" />
+		<Unit filename="include/Baraja.h" />
+		<Unit filename="include/Controladora.h" />
+		<Unit filename="include/DCircleList.h" />
+		<Unit filename="include/DLinkedListJ.h" />
+		<Unit filename="include/DLinkedListM.h" />
+		<Unit filename="include/DLinkedListR.h" />
+		<Unit filename="include/DNodeJ.h" />
+		<Unit filename="include/DNodeM.h" />
+		<Unit filename="include/DNodeR.h" />
+		<Unit filename="include/Jugador.h" />
+		<Unit filename="include/Movimiento.h" />
+		<Unit filename="include/Naipe.h" />
+		<Unit filename="include/Ronda.h" />
+		<Unit filename="include/Server.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mainp.cpp" />
+		<Unit filename="src/ArrayList.cpp" />
+		<Unit filename="src/ArrayListN.cpp" />
+		<Unit filename="src/Baraja.cpp" />
+		<Unit filename="src/Controladora.cpp" />
+		<Unit filename="src/DCircleList.cpp" />
+		<Unit filename="src/DLinkedListJ.cpp" />
+		<Unit filename="src/DLinkedListM.cpp" />
+		<Unit filename="src/DLinkedListR.cpp" />
+		<Unit filename="src/DNodeJ.cpp" />
+		<Unit filename="src/DNodeM.cpp" />
+		<Unit filename="src/DNodeR.cpp" />
+		<Unit filename="src/Jugador.cpp" />
+		<Unit filename="src/Movimiento.cpp" />
+		<Unit filename="src/Naipe.cpp" />
+		<Unit filename="src/Ronda.cpp" />
+		<Unit filename="src/Server.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
