@@ -1,0 +1,1006 @@
+# depslib dependency file v1.0
+1491686052 source:c:\users\admin\desktop\TTT\main.cpp
+	<iostream>
+	"DCircleList.h"
+	"Jugador.h"
+
+1491678083 source:c:\users\admin\desktop\TTT\src\baraja.cpp
+	"Baraja.h"
+
+1491678068 c:\users\admin\desktop\TTT\include\baraja.h
+	"Naipe.h"
+	<iostream>
+
+1491685730 source:c:\users\admin\desktop\TTT\src\jugador.cpp
+	"Jugador.h"
+
+1491685730 c:\users\admin\desktop\TTT\include\jugador.h
+	"Baraja.h"
+
+1491616263 source:c:\users\admin\desktop\TTT\src\movimiento.cpp
+	"Movimiento.h"
+
+1491616263 c:\users\admin\desktop\TTT\include\movimiento.h
+
+1491616250 source:c:\users\admin\desktop\TTT\src\ronda.cpp
+	"Ronda.h"
+
+1491616250 c:\users\admin\desktop\TTT\include\ronda.h
+
+1491619954 source:c:\users\admin\desktop\TTT\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+
+1491677941 c:\users\admin\desktop\TTT\include\naipe.h
+	<iostream>
+
+1491678554 source:c:\users\admin\desktop\TTT\src\controladora.cpp
+	"Controladora.h"
+
+1491680950 c:\users\admin\desktop\TTT\include\controladora.h
+
+1491684916 source:c:\users\admin\desktop\TTT\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1491684916 c:\users\admin\desktop\TTT\include\dcirclelist.h
+	"DLinkedListJ.h"
+	"DNodeJ.h"
+	<cstddef>
+
+1491681570 source:c:\users\admin\desktop\TTT\src\dlinkedlist.cpp
+	"DLinkedList.h"
+	"DNode.h"
+	"Baraja.h"
+	"Naipe.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1491681559 c:\users\admin\desktop\TTT\include\dlinkedlist.h
+	"DNode.h"
+
+1491681487 c:\users\admin\desktop\TTT\include\dnode.h
+	<iostream>
+
+1491682433 source:c:\users\admin\desktop\TTT\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1491682419 c:\users\admin\desktop\TTT\include\arraylist.h
+
+1491685867 c:\users\admin\desktop\TTT\include\dlinkedlistj.h
+	"DNodeJ.h"
+	"Jugador.h"
+
+1491684792 c:\users\admin\desktop\TTT\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1491686020 source:c:\users\admin\desktop\TTT\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"DNodeJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1491684405 source:c:\users\admin\desktop\TTT\src\dlinkedlistt.cpp
+	"DLinkedListT.h"
+	"DNodeT.h"
+	<stdexcept>
+	<cstddef>
+
+1491684466 c:\users\admin\desktop\TTT\include\dlinkedlistt.h
+	"DNodeT.h"
+
+1491684563 c:\users\admin\desktop\TTT\include\dnodet.h
+	<iostream>
+
+1491684792 source:c:\users\admin\desktop\TTT\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491684602 source:c:\users\admin\desktop\TTT\src\dnodet.cpp
+	"DNodeT.h"
+	<stdexcept>
+	<cstddef>
+
+1491685443 source:c:\users\admin\desktop\TTT\src\linkedlist.cpp
+	"LinkedList.h"
+	"Node.h"
+	<stdexcept>
+	<cstddef>
+
+1491685402 c:\users\admin\desktop\TTT\include\linkedlist.h
+	"Node.h"
+
+1491679161 c:\users\admin\desktop\TTT\include\node.h
+	<iostream>
+
+1491685457 source:c:\users\admin\desktop\TTT\src\node.cpp
+	"Node.h"
+	<stdexcept>
+	<cstddef>
+
+1491707166 source:f:\TTT\main.cpp
+	<iostream>
+	"DCircleList.h"
+	"Jugador.h"
+
+1491706748 f:\TTT\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1491706924 f:\TTT\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+	"Jugador.h"
+
+1491702214 f:\TTT\include\dnodej.h
+	<iostream>
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491685732 f:\TTT\include\jugador.h
+	"Baraja.h"
+
+1491678070 f:\TTT\include\baraja.h
+	"Naipe.h"
+	<iostream>
+
+1491677942 f:\TTT\include\naipe.h
+	<iostream>
+
+1491678084 source:f:\TTT\src\baraja.cpp
+	"Baraja.h"
+
+1491685732 source:f:\TTT\src\jugador.cpp
+	"Jugador.h"
+
+1491616264 source:f:\TTT\src\movimiento.cpp
+	"Movimiento.h"
+
+1491616264 f:\TTT\include\movimiento.h
+
+1491619956 source:f:\TTT\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+
+1491616252 source:f:\TTT\src\ronda.cpp
+	"Ronda.h"
+
+1491616252 f:\TTT\include\ronda.h
+
+1491694168 source:f:\TTT\src\controladora.cpp
+	"Controladora.h"
+
+1491694168 f:\TTT\include\controladora.h
+
+1491706760 source:f:\TTT\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1491707098 source:f:\TTT\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	<stdexcept>
+	<cstddef>
+
+1491706952 source:f:\TTT\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491756126 source:d:\TTT\main.cpp
+	<iostream>
+	"DCircleList.h"
+	"Jugador.h"
+
+1491711962 d:\TTT\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1491710830 d:\TTT\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+
+1491752614 d:\TTT\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1491685732 d:\TTT\include\jugador.h
+	"Baraja.h"
+
+1491753008 d:\TTT\include\baraja.h
+	"Naipe.h"
+	"ArrayList.h"
+	<iostream>
+
+1491755600 d:\TTT\include\naipe.h
+	<iostream>
+
+1491756066 source:d:\TTT\src\baraja.cpp
+	"Baraja.h"
+	<string>
+	<sstream>
+
+1491749732 source:d:\TTT\src\controladora.cpp
+	"Controladora.h"
+
+1491750340 d:\TTT\include\controladora.h
+	"Baraja.h"
+	"DCircleList.h"
+
+1491711982 source:d:\TTT\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1491711034 source:d:\TTT\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491685732 source:d:\TTT\src\jugador.cpp
+	"Jugador.h"
+
+1491616264 source:d:\TTT\src\movimiento.cpp
+	"Movimiento.h"
+
+1491616264 d:\TTT\include\movimiento.h
+
+1491755600 source:d:\TTT\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+
+1491616252 source:d:\TTT\src\ronda.cpp
+	"Ronda.h"
+
+1491616252 d:\TTT\include\ronda.h
+
+1491711844 source:d:\TTT\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1491755510 source:d:\TTT\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1491755434 d:\TTT\include\arraylist.h
+	"Naipe.h"
+
+1491749268 d:\TTT\include\arraylistb.h
+	"Baraja.h"
+
+1491750370 source:d:\TTT\src\arraylistb.cpp
+	"ArrayListB.h"
+	<iostream>
+	<stdexcept>
+
+1492323000 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1492303540 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\arraylist.h
+	"Naipe.h"
+
+1492302041 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\naipe.h
+	<iostream>
+
+1492325875 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\baraja.cpp
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+
+1492240069 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\baraja.h
+	"ArrayList.h"
+
+1492364908 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\controladora.cpp
+	"Controladora.h"
+	"ArrayListN.h"
+	"ArrayList.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1492364739 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\controladora.h
+	"DLinkedListJ.h"
+	"DLinkedListR.h"
+
+1492239930 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1492239735 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+
+1492239691 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1492240111 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\jugador.h
+	"ArrayList.h"
+
+1491711982 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1492364687 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1491711034 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491868261 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\jugador.cpp
+	"Jugador.h"
+
+1492398037 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\movimiento.cpp
+	"Movimiento.h"
+
+1492404572 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\movimiento.h
+	"Jugador.h"
+	"Baraja.h"
+
+1492396759 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1492404854 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\ronda.cpp
+	"Ronda.h"
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1492319917 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\ronda.h
+	"DLinkedListJ.h"
+	"DLinkedListM.h"
+	"ArrayList.h"
+
+1492398457 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\main.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1491800073 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\arraylistn.cpp
+	"ArrayListN.h"
+	<iostream>
+	<stdexcept>
+
+1491865533 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\arraylistn.h
+
+1492365318 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dlinkedlistm.cpp
+	"DLinkedListM.h"
+	"Movimiento.h"
+	<stdexcept>
+	<cstddef>
+
+1492239904 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dlinkedlistm.h
+	<stdexcept>
+	<cstddef>
+	"DNodeM.h"
+
+1492239856 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dnodem.h
+	<iostream>
+	"Movimiento.h"
+
+1492365163 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dlinkedlistr.cpp
+	"DLinkedListR.h"
+	"Ronda.h"
+	<stdexcept>
+	<cstddef>
+
+1492239904 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dlinkedlistr.h
+	<stdexcept>
+	<cstddef>
+	"DNodeR.h"
+
+1491891871 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dnodem.cpp
+	"DNodeM.h"
+	<stdexcept>
+	<cstddef>
+	"Movimiento.h"
+
+1491891951 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\dnoder.cpp
+	"DNodeR.h"
+	<stdexcept>
+	<cstddef>
+	"Ronda.h"
+
+1492239879 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\dnoder.h
+	<iostream>
+	"Ronda.h"
+
+1492540107 D
+
+1492665960 source:c:\xampp\htdocs\ed-TTT\logica\TTT\main.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492548815 
+
+1492543102 gin/master
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+	"Ronda.h"
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1492658147 c:\xampp\htdocs\ed-TTT\logica\TTT\include\controladora.h
+	"DLinkedListJ.h"
+	"DLinkedListR.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\baraja.h
+	"ArrayList.h"
+
+1492278661 c:\xampp\htdocs\ed-TTT\logica\TTT\include\naipe.h
+	<iostream>
+
+1492303577 c:\xampp\htdocs\ed-TTT\logica\TTT\include\arraylist.h
+	"Naipe.h"
+
+1492451860 c:\xampp\htdocs\ed-TTT\logica\TTT\include\jugador.h
+	"ArrayList.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dlinkedlistr.h
+	<stdexcept>
+	<cstddef>
+	"DNodeR.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dnoder.h
+	<iostream>
+	"Ronda.h"
+
+1492551742 c:\xampp\htdocs\ed-TTT\logica\TTT\include\ronda.h
+	"DLinkedListJ.h"
+	"DLinkedListM.h"
+	"ArrayList.h"
+
+1492365694 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1491832163 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\arraylistn.cpp
+	"ArrayListN.h"
+	<iostream>
+	<stdexcept>
+
+1491923170 c:\xampp\htdocs\ed-TTT\logica\TTT\include\arraylistn.h
+
+1491923170 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\baraja.cpp
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+
+1492658147 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\controladora.cpp
+	"Controladora.h"
+	"ArrayListN.h"
+	"ArrayList.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1491832163 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1492551742 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1492365947 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dlinkedlistm.cpp
+	"DLinkedListM.h"
+	"Movimiento.h"
+	<stdexcept>
+	<cstddef>
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dlinkedlistm.h
+	<stdexcept>
+	<cstddef>
+	"DNodeM.h"
+
+1492270950 c:\xampp\htdocs\ed-TTT\logica\TTT\include\dnodem.h
+	<iostream>
+	"Movimiento.h"
+
+1492443453 c:\xampp\htdocs\ed-TTT\logica\TTT\include\movimiento.h
+	"Jugador.h"
+	"Baraja.h"
+
+1492365947 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dlinkedlistr.cpp
+	"DLinkedListR.h"
+	"Ronda.h"
+	<stdexcept>
+	<cstddef>
+
+1491832163 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491923170 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dnodem.cpp
+	"DNodeM.h"
+	<stdexcept>
+	<cstddef>
+	"Movimiento.h"
+
+1491923170 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\dnoder.cpp
+	"DNodeR.h"
+	<stdexcept>
+	<cstddef>
+	"Ronda.h"
+
+1492452084 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\jugador.cpp
+	"Jugador.h"
+
+1492644542 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\movimiento.cpp
+	"Movimiento.h"
+
+1492450069 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1492662921 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\ronda.cpp
+	"Ronda.h"
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1492303577 source:c:\xampp\htdocs\ed-TTT\logica\TTT\src\server.cpp
+	"Server.h"
+	<iostream>
+
+1492271862 c:\xampp\htdocs\ed-TTT\logica\TTT\include\server.h
+	<windows.h>
+	<winsock2.h>
+	<iostream>
+
+1492235167 c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\include\server.h
+	<windows.h>
+	<winsock2.h>
+	<iostream>
+
+1492305975 source:c:\xampp\htdocs\ed-TTT\logica\TTT\menu.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492662921 source:c:\xampp\htdocs\ed-TTT\logica\TTT\mainp.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492396896 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\mainp.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492303541 source:c:\users\admin\documents\github\TTT\ed-TTT\logica\TTT\src\server.cpp
+	"Server.h"
+	<iostream>
+
+1492662922 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\mainp.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492658148 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\controladora.h
+	"DLinkedListJ.h"
+	"DLinkedListR.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1492451862 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\jugador.h
+	"ArrayList.h"
+
+1492303578 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\arraylist.h
+	"Naipe.h"
+
+1492278662 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\naipe.h
+	<iostream>
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dlinkedlistr.h
+	<stdexcept>
+	<cstddef>
+	"DNodeR.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dnoder.h
+	<iostream>
+	"Ronda.h"
+
+1492551744 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\ronda.h
+	"DLinkedListJ.h"
+	"DLinkedListM.h"
+	"ArrayList.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dlinkedlistm.h
+	<stdexcept>
+	<cstddef>
+	"DNodeM.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dnodem.h
+	<iostream>
+	"Movimiento.h"
+
+1492443454 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\movimiento.h
+	"Jugador.h"
+	"Baraja.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\baraja.h
+	"ArrayList.h"
+
+1492986502 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\server.h
+	<windows.h>
+	<winsock2.h>
+	<iostream>
+
+1492365696 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\arraylistn.cpp
+	"ArrayListN.h"
+	<iostream>
+	<stdexcept>
+
+1491923172 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\arraylistn.h
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\baraja.cpp
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+
+1492658148 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\controladora.cpp
+	"Controladora.h"
+	"ArrayListN.h"
+	"ArrayList.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1492551744 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1492365948 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dlinkedlistm.cpp
+	"DLinkedListM.h"
+	"Movimiento.h"
+	<stdexcept>
+	<cstddef>
+
+1492365948 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dlinkedlistr.cpp
+	"DLinkedListR.h"
+	"Ronda.h"
+	<stdexcept>
+	<cstddef>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dnodem.cpp
+	"DNodeM.h"
+	<stdexcept>
+	<cstddef>
+	"Movimiento.h"
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\dnoder.cpp
+	"DNodeR.h"
+	<stdexcept>
+	<cstddef>
+	"Ronda.h"
+
+1492452086 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\jugador.cpp
+	"Jugador.h"
+
+1492644544 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\movimiento.cpp
+	"Movimiento.h"
+
+1492450070 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1492662922 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\ronda.cpp
+	"Ronda.h"
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1492985737 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\src\server.cpp
+	"Server.h"
+	<iostream>
+
+1492986204 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\veneno\main.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492662922 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\mainp.cpp
+	<iostream>
+	"Controladora.h"
+	"Server.h"
+	<sstream>
+	<string>
+	<cstdlib>
+
+1492658148 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\controladora.h
+	"DLinkedListJ.h"
+	"DLinkedListR.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dlinkedlistj.h
+	<stdexcept>
+	<cstddef>
+	"DNodeJ.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dnodej.h
+	<iostream>
+	"Jugador.h"
+
+1492451862 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\jugador.h
+	"ArrayList.h"
+
+1492303578 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\arraylist.h
+	"Naipe.h"
+
+1492278662 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\naipe.h
+	<iostream>
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dlinkedlistr.h
+	<stdexcept>
+	<cstddef>
+	"DNodeR.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dnoder.h
+	<iostream>
+	"Ronda.h"
+
+1492551744 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\ronda.h
+	"DLinkedListJ.h"
+	"DLinkedListM.h"
+	"ArrayList.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dlinkedlistm.h
+	<stdexcept>
+	<cstddef>
+	"DNodeM.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dnodem.h
+	<iostream>
+	"Movimiento.h"
+
+1492443454 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\movimiento.h
+	"Jugador.h"
+	"Baraja.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\baraja.h
+	"ArrayList.h"
+
+1492987984 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\server.h
+	<windows.h>
+	<winsock2.h>
+	<iostream>
+
+1492365696 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\arraylist.cpp
+	"ArrayList.h"
+	<iostream>
+	<stdexcept>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\arraylistn.cpp
+	"ArrayListN.h"
+	<iostream>
+	<stdexcept>
+
+1491923172 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\arraylistn.h
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\baraja.cpp
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+
+1492658148 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\controladora.cpp
+	"Controladora.h"
+	"ArrayListN.h"
+	"ArrayList.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dcirclelist.cpp
+	"DCircleList.h"
+
+1492270952 c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\include\dcirclelist.h
+	"DLinkedListJ.h"
+	<cstddef>
+
+1492551744 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dlinkedlistj.cpp
+	"DLinkedListJ.h"
+	"Jugador.h"
+	<stdexcept>
+	<cstddef>
+
+1492365948 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dlinkedlistm.cpp
+	"DLinkedListM.h"
+	"Movimiento.h"
+	<stdexcept>
+	<cstddef>
+
+1492365948 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dlinkedlistr.cpp
+	"DLinkedListR.h"
+	"Ronda.h"
+	<stdexcept>
+	<cstddef>
+
+1491832164 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dnodej.cpp
+	"DNodeJ.h"
+	<stdexcept>
+	<cstddef>
+	"Jugador.h"
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dnodem.cpp
+	"DNodeM.h"
+	<stdexcept>
+	<cstddef>
+	"Movimiento.h"
+
+1491923172 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\dnoder.cpp
+	"DNodeR.h"
+	<stdexcept>
+	<cstddef>
+	"Ronda.h"
+
+1492452086 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\jugador.cpp
+	"Jugador.h"
+
+1492644544 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\movimiento.cpp
+	"Movimiento.h"
+
+1492450070 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\naipe.cpp
+	"Naipe.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1492662922 source:c:\xampp\htdocs\ic-2001-ii-p-2017\logica\ttt\src\ronda.cpp
+	"Ronda.h"
+	"Baraja.h"
+	"ArrayListN.h"
+	<string>
+	<sstream>
+	<cstdlib>
+	<time.h>
+	<iostream>
+

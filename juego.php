@@ -3,7 +3,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
-        <title>GAT - El juego mas complejo que has jugado.</title>
+        <title>GAT</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/human2.css">
@@ -15,7 +16,7 @@
 			if (valor == ""){
 				$(".dialogo").text(mensajes[Math.floor(Math.random()*(mensajes.length-0))]+"...");
 				correr();
-				$.post('Logica/s.php',{x: 0,y: 0},function( data ) {
+				$.post('Logica/jugar.php',{x: 0,y: 0},function( data ) {
 					parar();
 				})
 			}else{
@@ -31,7 +32,7 @@
 			$(".laptop404").css("animation","tapWobble 0.4s linear infinite");
 		}
 		function parar(){
-			$(".dialogo").text("Esperando...");
+			$(".dialogo").text("Espero tu movimiento...");
 			$(".torso404").css("animation","sway 20s ease ");
 			$(".head404").css("animation","headTilt 20s ease ");
 			$(".eyes404").css("animation","blink404 10s steps(1) , pan 10s ease-in-out ");
@@ -39,6 +40,11 @@
 			$(".rightarm404").css("animation","typeLeft 0.4s linear ");
 			$(".laptop404").css("animation","tapWobble 0.4s linear ");
 		}
+		setTimeout(function(){
+		  $(".dialogo").text("Espero tu movimiento...");
+		  correr();
+		  parar();
+		}, 3000);
 		</script>
     </head>
     <body style="background-color: black;overflow-x: hidden; overflow-y: hidden;">
@@ -77,7 +83,7 @@
 					</table>
 				</td>
 				<td class="hidden-xs">
-					<div class="dialogo">Esperando...</div>
+					<div class="dialogo">Hola mi nombre es Dan...</div>
 					<div class="newcharacter404">
 						<div class="chair404"></div>
 						<div class="leftshoe404"></div>

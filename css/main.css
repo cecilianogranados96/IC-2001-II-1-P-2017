@@ -17,7 +17,14 @@
     color: #FFFFFF;
     font-size: 900%;
 }
-
+.input {
+	width: 200px;
+    font-family: PIZARRA;
+    height: 50px;
+    font-size: -webkit-xxx-large;
+    color: white;
+    background-color: black;
+}
 .puntos{
 	font-family: PIZARRA;
 	color: #FFFFFF;

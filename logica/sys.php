@@ -4,7 +4,7 @@
 # OBJETIVO:
 # =========
 #
-# Cerrar el juego colocado para cliente.
+# Iniciar socket.
 #
 # Parametros:
 # ===========
@@ -16,6 +16,11 @@
 #
 #
 #########################################################################################
-$output = shell_exec('taskkill /F /IM "Veneno.exe"');
-echo "TERMINADO";
+if ($_GET['opt']){
+	system('TTT\bin\Debug\TTT.exe');
+	echo "start";
+}else{
+	$output = shell_exec('taskkill /F /IM "TTT.exe"');
+	echo "down";
+}
 ?>
