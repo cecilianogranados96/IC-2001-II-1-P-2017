@@ -1,4 +1,4 @@
-#ifndef DLINKEDLISTJ_H
+/*#ifndef DLINKEDLISTJ_H
 #define DLINKEDLISTJ_H
 #include <stdexcept>
 #include <cstddef>
@@ -32,3 +32,4 @@ class DLinkedListJ
 };
 
 #endif // DLINKEDLIST_H
+*/

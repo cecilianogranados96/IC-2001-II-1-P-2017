@@ -1,4 +1,4 @@
-#include "DNodeJ.h"
+/*#include "DNodeJ.h"
 #include <stdexcept>
 #include <cstddef>
 #include "Jugador.h"
@@ -46,3 +46,4 @@ DNodeJ::~DNodeJ()
     delete previous;
     delete next;
 }
+*/

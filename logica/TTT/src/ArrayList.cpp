@@ -10,14 +10,14 @@ ArrayList::ArrayList(){}
 
 //Constructor con parámetros
 ArrayList::ArrayList(int pMax){
-	//elements = new Naipe[pMax];
+	//elements = new ArrayListC[pMax];
 	size = 0;
 	pos = 0;
 	max = pMax;
 }
 
 //Método getValue: devuelve el valor en pos
-Naipe* ArrayList::getValue(){
+ArrayListC* ArrayList::getValue(){
     try
     {
         if(pos<0 || pos>size){
@@ -60,13 +60,14 @@ void ArrayList::goToEnd(){
 }
 
 //Método goToPos: pone el pos en la posición dada como parámetro
-void ArrayList::goToPos(int pos){
+ArrayListC* ArrayList::goToPos(int pos){
     try
     {
         if(pos<0 || pos>size){
             throw runtime_error("La posicion esta fuera de los limites");
         }
         this->pos = pos;
+        return elements[pos];
     }
     catch (runtime_error e)
     {
@@ -89,7 +90,7 @@ void ArrayList::next(){
 }
 
 //Método append: añade un elemento al final de la lista
-void ArrayList::append(Naipe* element){
+void ArrayList::append(ArrayListC* element){
     try
     {
         if(size == 1024){
@@ -106,7 +107,7 @@ void ArrayList::append(Naipe* element){
 }
 
 //Método insert: inserta un elemento después del pos
-void ArrayList::insert(Naipe* element){
+void ArrayList::insert(ArrayListC* element){
     try
     {
         if(size == 1024){
@@ -126,18 +127,17 @@ void ArrayList::insert(Naipe* element){
 }
 
 //Función remove: elimina el elemento en el pos
-Naipe* ArrayList::remove(){
+ArrayListC* ArrayList::remove(){
     try
     {
         if (size == 0){
             throw runtime_error("La cola esta vacia");
         }
-        Naipe* deleteElement = elements[pos];
+        ArrayListC* deleteElement = elements[pos];
 
         for(int i=pos;i<size;i++){
             elements[i] = elements[i+1];
         }
-
         size--;
         return deleteElement;
     }
@@ -148,10 +148,10 @@ Naipe* ArrayList::remove(){
 }
 
 //Función removeElement: elimina el elemento que entra como parámetro
-void ArrayList::removeElement(Naipe* naipe){
+void ArrayList::removeElement(ArrayListC* element){
     try
     {
-        int posicion = find(naipe);
+        int posicion = find(element);
         if (size == 0){
             throw runtime_error("La cola esta vacia");
         }
@@ -171,7 +171,7 @@ void ArrayList::removeElement(Naipe* naipe){
 }
 
 //Función find: devuelve la posición donde se encuentra el elemento
-int ArrayList::find(Naipe* naipe)
+int ArrayList::find(ArrayListC* element)
 {
     try
     {
@@ -180,11 +180,11 @@ int ArrayList::find(Naipe* naipe)
         }
         int posicion = -1;
         for(int j=0; j<size; j++){
-            if(naipe->getNomenclatura() == elements[j]->getNomenclatura()){
+            /*if(naipe->getNomenclatura() == elements[j]->getNomenclatura()){
                 if(naipe->getNumero() == elements[j]->getNumero()){
                     posicion = j;
                 }
-            }
+            }*/
         }
         return posicion;
     }
@@ -215,7 +215,7 @@ void ArrayList::print(){
 string ArrayList::r_print(){
     string r = "";
     for(int i=0;i<size;i++){
-            r = r + elements[i]->r_print();
+           // r = r + elements[i]->r_print();
     }
     if (r == ""){
         return "Vacio";

@@ -1,4 +1,4 @@
-#include "DNodeM.h"
+/*#include "DNodeM.h"
 #include <stdexcept>
 #include <cstddef>
 #include "Movimiento.h"
@@ -46,3 +46,4 @@ DNodeM::~DNodeM()
     delete previous;
     delete next;
 }
+*/

@@ -1,4 +1,4 @@
-#include "Controladora.h"
+/*#include "Controladora.h"
 #include "ArrayListN.h"
 #include "ArrayList.h"
 #include <string>
@@ -366,3 +366,4 @@ ArrayList* Controladora::crearBOriginal()
     barajaOriginal->setBaraja(bOrdenada);
     return temp;
 }
+*/

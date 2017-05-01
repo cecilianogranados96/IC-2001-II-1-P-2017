@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #ifndef DNODEM_H
 #define DNODEM_H
 #include "Movimiento.h"
@@ -27,4 +27,4 @@ class DNodeM
 };
 
 #endif // DNODE_H
-
+*/

@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #ifndef DNODEJ_H
 #define DNODEJ_H
 #include "Jugador.h"
@@ -26,3 +26,4 @@ class DNodeJ
 
 #endif // DNODE_H
 
+*/

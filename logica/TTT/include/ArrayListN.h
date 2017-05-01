@@ -1,4 +1,4 @@
-#ifndef ARRAYLISTN_H
+/*#ifndef ARRAYLISTN_H
 #define ARRAYLISTN_H
 
 class ArrayListN
@@ -28,3 +28,4 @@ class ArrayListN
 		int pos;
 };
 #endif // ARRAYLISTN_H
+*/

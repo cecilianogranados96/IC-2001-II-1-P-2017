@@ -1,4 +1,4 @@
-/*#include "ArrayListN.h"
+#include "ArrayListC.h"
 #include <iostream>
 #include <stdexcept>
 #define DEFAULT_MAX_SIZE 1024
@@ -6,18 +6,18 @@
 using namespace std;
 
 //Constructor vacío
-ArrayListN::ArrayListN(){}
+ArrayListC::ArrayListC(){}
 
 //Constructor con parámetros
-ArrayListN::ArrayListN(int pMax = DEFAULT_MAX_SIZE){
-	elements = new int[pMax];
+ArrayListC::ArrayListC(int pMax = DEFAULT_MAX_SIZE){
+	elements = new char[pMax];
 	size = 0;
 	pos = 0;
 	max = pMax;
 }
 
 //Método getValue: devuelve el valor en pos
-int ArrayListN::getValue(){
+char ArrayListC::getValue(){
     try
     {
         if(pos<0 || pos>size){
@@ -33,35 +33,40 @@ int ArrayListN::getValue(){
         cout << "Error: " << e.what()<<"\n\n";
     }
 }
+void ArrayListC::setValue(char element)
+{
+    elements[pos] = element;
+}
 
 //Método getPos: devuelve pos
-int ArrayListN::getPos(){
+int ArrayListC::getPos(){
 	return pos;
 }
 
 //Método getSize: devuelve el tamaño de la lista
-int ArrayListN::getSize(){
+int ArrayListC::getSize(){
 	return size;
 }
 
 //Método goToStart: situa el pos al inicio de la lista
-void ArrayListN::goToStart(){
+void ArrayListC::goToStart(){
 	pos = 0;
 }
 
 //Método goToEnd: situa el pos al final de la lista
-void ArrayListN::goToEnd(){
+void ArrayListC::goToEnd(){
     pos = size-1;
 }
 
 //Método goToPos: pone el pos en la posición dada como parámetro
-void ArrayListN::goToPos(int pos){
+char ArrayListC::goToPos(int pos){
     try
     {
         if(pos<0 || pos>size){
             throw runtime_error("La posicion esta fuera de los limites");
         }
         this->pos = pos;
+        return elements[pos];
     }
     catch (runtime_error e)
     {
@@ -70,21 +75,21 @@ void ArrayListN::goToPos(int pos){
 }
 
 //Método previous: pone el pos en la posición anterior
-void ArrayListN::previous(){
+void ArrayListC::previous(){
 	if (pos>0){
 		pos--;
 	}
 }
 
 //Método next: pone el pos en la posición siguiente
-void ArrayListN::next(){
+void ArrayListC::next(){
 	if (pos+1<size){
 		pos++;
 	}
 }
 
 //Método append: añade un elemento al final de la lista
-void ArrayListN::append(int element){
+void ArrayListC::append(char element){
     try
     {
         if(size == max){
@@ -101,7 +106,7 @@ void ArrayListN::append(int element){
 }
 
 //Método insert: inserta un elemento después del pos
-void ArrayListN::insert(int element){
+void ArrayListC::insert(char element){
     try
     {
         if(size == max){
@@ -121,7 +126,7 @@ void ArrayListN::insert(int element){
 }
 
 //Función remove: elimina el elemento siguiente del pos
-int ArrayListN::remove(){
+int ArrayListC::remove(){
     try
     {
         if (size == 0){
@@ -143,7 +148,7 @@ int ArrayListN::remove(){
 }
 
 //Método print: imprime la lista
-void ArrayListN::print(){
+void ArrayListC::print(){
     try
     {
         if (size == 0){
@@ -162,7 +167,7 @@ void ArrayListN::print(){
 }
 
 //Método clear: elimina la lista de arreglos
-void ArrayListN::clear()
+void ArrayListC::clear()
 {
     try
     {
@@ -177,7 +182,6 @@ void ArrayListN::clear()
 }
 
 //Método destructor de la clase
-ArrayListN::~ArrayListN(){
+ArrayListC::~ArrayListC(){
 	clear();
 }
-*/

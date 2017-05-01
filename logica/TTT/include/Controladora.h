@@ -1,4 +1,4 @@
-#ifndef CONTROLADORA_H
+/*#ifndef CONTROLADORA_H
 #define CONTROLADORA_H
 #include "DLinkedListJ.h"
 #include "DLinkedListR.h"
@@ -40,3 +40,4 @@ class Controladora
 };
 
 #endif // CONTROLADORA_H
+*/

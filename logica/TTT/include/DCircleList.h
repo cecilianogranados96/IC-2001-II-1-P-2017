@@ -1,4 +1,4 @@
-#ifndef DCIRCLELIST_H
+/*#ifndef DCIRCLELIST_H
 #define DCIRCLELIST_H
 #include "DLinkedListJ.h"
 #include <cstddef>
@@ -18,3 +18,4 @@ class DCircleList : public DLinkedListJ
 };
 
 #endif // DCIRCLELIST_H
+*/

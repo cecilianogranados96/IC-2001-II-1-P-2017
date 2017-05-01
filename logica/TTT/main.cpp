@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include "Controladora.h"
 #include "Server.h"
 #include <sstream>
@@ -28,7 +28,7 @@ int main(void)
     /*
         WSockServer MyServer(REQ_WINSOCK_VER);
         MyServer.RunServer(1500,"INICIAL");
-    */
+
     cout<<"\t\t\t Tic Tac Toe GAME\n\n";
     int opcion = 0;
     while(true)
@@ -37,7 +37,7 @@ int main(void)
         WSockServer MyServer = WSockServer();
         opcion = toint(MyServer.RunServer("Opcion OK"));
 
-        /**** Configuracion ****/
+        /**** Configuracion ***
         if(opcion == 0){
             string ficha;
             cout<<"\nDigite Ficha con la cual juega: ";
@@ -45,7 +45,7 @@ int main(void)
             ficha = MyServer.RunServer("FICHA REGISTRADA");
 
         }
-        /**** OPT JUEGO ****/
+        /**** OPT JUEGO ***
         if(opcion == 1){
             int numJugadores;
             cout<<"JUEGO: ";
@@ -53,7 +53,7 @@ int main(void)
             numJugadores = toint(MyServer.RunServer("Respuesta del tablero"));
             //Formato:        1-1:X~1-2:O~
         }
-        /**** JUEGAR ****/
+        /**** JUGAR ***
         if(opcion == 2)
         {
             string X;
@@ -70,7 +70,7 @@ int main(void)
             // Se supone que debe jugar en las posiciones dadas y verificar jugada
 
         }
-        /**** VERIFICAR JUGADOR ****/
+        /**** VERIFICAR JUGADOR ***
         if(opcion == 3)
         {
             string verificar;
@@ -81,4 +81,69 @@ int main(void)
 
 
     }
+}*/
+
+#include <iostream>
+#include <cstdlib>
+#include <climits>
+#include <ctime>
+#include <minMax.h>
+#include <ArrayList.h>
+#include <ArrayListC.h>
+
+
+int main(void){
+    minMax *minMaxTree = new minMax();
+    srand(time(0));
+    bool BotStart(false);
+    string yesno;
+    int TotalMoves(0),i(0),j(0);
+    ArrayList* m = new ArrayList(3);
+    for(int i=0; i<3; i++){
+        m->append(new ArrayListC(3));
+        m->goToEnd();
+        for(int i=0; i<3; i++){
+            m->getValue()->append('*');
+        }
+    }
+
+REYESNO:
+    cout << "¿Quiere el primer turno? si no" << endl;
+    cin >> yesno;
+    if(yesno == "si") BotStart = false;
+    else if(yesno == "no") BotStart = true;
+    else {
+         cout << "La entrada fue inválida, vuelva a intentar" << endl;
+         goto REYESNO;
+    }
+    cout << "Puede empezar su turno al escribir coordenadas como: 1 2 empezando en 0 0 desde la esquina superior izquierda." << endl;
+    if(BotStart) {
+        cout << "Empieza PC" << endl;
+        minMaxTree->BotPlayRand(m);
+        TotalMoves = 1;
+    }
+    while(TotalMoves < 9) {
+PLAY:
+        minMaxTree->display(m);
+        cout << "Tu turno X. Digite las coordenadas:";
+        cin >> i >> j;
+        m->goToPos(i)->goToPos(j);
+        if(!minMaxTree->validMove(m,i,j)) goto PLAY;
+        else m->getValue()->setValue('X');
+        TotalMoves ++;
+        if(minMaxTree->GoalState(m)) goto Done;
+        minMaxTree->PlayBot(m, TotalMoves);
+        if(minMaxTree->GoalState(m)) goto Done;
+        TotalMoves++;
+
+        cout << "total de movimientos :" << TotalMoves << endl;
+    }
+Done:
+
+    minMaxTree->display(m);
+    if(minMaxTree->LooseState(m)) cout << "Bot Loose :(" << endl;
+    else if(minMaxTree->WinState(m)) cout << "Bot Win:" << endl;
+    else cout << "Empate" << endl;
+    return 0;
+
 }

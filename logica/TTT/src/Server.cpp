@@ -1,7 +1,7 @@
 #include "Server.h"
 #include <iostream>
 using namespace std;
-WSockServer::WSockServer()
+/*WSockServer::WSockServer()
 {
 	hSocket = INVALID_SOCKET;
 	ClientSocket = INVALID_SOCKET;
@@ -62,4 +62,4 @@ WSockServer::~WSockServer()
 		closesocket(hSocket);
 	if(ClientSocket != INVALID_SOCKET)
 		closesocket(hSocket);
-}
+}*/
