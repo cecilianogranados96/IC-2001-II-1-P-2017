@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <climits>
 #include <ctime>
-#include <stdexcept>
+
 minMax::minMax()
 {
     //ctor
@@ -66,12 +66,18 @@ bool minMax::LooseState(ArrayList *m ) {
 int minMax::rWeight(char c1, char c2, char c3)
 {
     ArrayListC* row = new ArrayListC(3);
+    row->goToStart();
+    row->append(c1);
+    row->append(c2);
+    row->append(c3);
+    /*
     row->goToPos(0);
     row->setValue(c1);
-    row->goToPos(0);
+    row->goToPos(1);
     row->setValue(c2);
-    row->goToPos(0);
+    row->goToPos(2);
     row->setValue(c3);
+    */
 	//char row[3] = {c1, c2, c3};
 	int numX = 0;
 	int numO = 0;
@@ -81,7 +87,7 @@ int minMax::rWeight(char c1, char c2, char c3)
 		if (row->goToPos(i) == 'X') numX++;
 		if (row->goToPos(i) == 'O') numO++;
 	}
-
+    delete row;
 	if (numX == numO) return 0;
 	else if (numO == 3) return 100;
 	else if (numO == 2) return 10;
@@ -109,13 +115,16 @@ bool minMax::GoalState(ArrayList *m, char ch) {
 }
 
 int minMax::minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj) {
-    if(GoalState(node)) return Evaluate(node);
+   // cout << "**********" << endl;
+  //  display(node);
+   // cout << "**********" << endl;
+    if(GoalState(node)) return Evaluate(node);   // return the heuristic value
     int bestval, tempval, lf(10 - level), iii , jjj;
     if(IsBot) {
         bestval = INT_MIN;
         for(int i = 0; i<node->getSize(); i++) {
             for(int j = 0; j<node->goToPos(i)->getSize(); j++) {
-                if(node->goToPos(i)->goToPos(j) == '*'){
+                if(node->goToPos(i)->goToPos(j) == '*') {
                     node->getValue()->setValue('O');
                     tempval = minimax(node, level + 1, false, ii , jj);
                     if(tempval > bestval) {
@@ -123,6 +132,11 @@ int minMax::minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj) {
                         iii = i;
                         jjj = j;
                     }
+  //                  if(level == print && false) {
+ //                       display(node);
+ //                       cout << "val :" << tempval << endl;
+  //                      }
+                    node->goToPos(i)->goToPos(j);
                     node->getValue()->setValue('*');
                 }
            }
@@ -130,11 +144,13 @@ int minMax::minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj) {
     ii = iii;
     jj = jjj;
     } else {
+
+    // supposed human
         bestval = INT_MAX;
         for(int i = 0; i < node->getSize(); i++) {
             for(int j = 0; j<node->goToPos(i)->getSize(); j++) {
                 if(node->goToPos(i)->goToPos(j) == '*') {
-                    //node->goToPos(i)->goToPos(j);
+                    node->goToPos(i)->goToPos(j);
                     node->getValue()->setValue('X');
                     tempval = minimax(node, level + 1, true, ii, jj);
                     if(tempval < bestval ) {
@@ -142,7 +158,7 @@ int minMax::minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj) {
                         ii = i;
                         jj = j;
                     }
-                    //node->goToPos(i)->goToPos(j);
+                    node->goToPos(i)->goToPos(j);
                     node->getValue()->setValue('*');
                 }
             }
@@ -151,20 +167,32 @@ int minMax::minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj) {
     return bestval;
 }
 
-
-
-
 void minMax::PlayBot(ArrayList *m, int level) {
+
     int playi(0), playj(0);
     int bestval = INT_MIN, tempval;
+    print = level;
 
-    try{
-         bestval = minimax(m, level, true, playi, playj);
-        m->goToPos(playi)->goToPos(playj);
-        m->getValue()->setValue('O');
-    }catch (runtime_error e){
-        cout <<"ERROR";
-    }
+    bestval = minimax(m, level, true, playi, playj);
+//    int val = minimax(m, level, true); // true for bot player
+/*
+    for(int i = 0; i < m.size(); i++) {
+        for(int j = 0; j<m[i].size(); j++) {
+            if(m[i][j] == '*') {
+                m[i][j] = 'X';
+                tempval = -minimax(m, level + 1, true);
+                cout << tempval << " " << i << " " << j << endl;
+                if(tempval > bestval) {
+                    bestval = tempval;
+                    playi = i;
+                    playj = j;
+                }
+                m[i][j] = '*';        // restore the board
+            }
+        }
+    }*/
     cout << "Bestval:" << bestval
          << " Bestmove: (" << playi << ", " << playj << ")" << endl;
+    m->goToPos(playi)->goToPos(playj);
+    m->getValue()->setValue('O');
 }

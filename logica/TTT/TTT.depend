@@ -1140,13 +1140,12 @@
 
 1493650366 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\mimax.h
 
-1493684272 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
+1493685556 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
 	"minMax.h"
 	<iostream>
 	<cstdlib>
 	<climits>
 	<ctime>
-	<stdexcept>
 
 1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\server.cpp
 	"Server.h"
