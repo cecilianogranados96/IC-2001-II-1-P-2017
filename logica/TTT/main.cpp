@@ -100,9 +100,10 @@ int main(void){
     int TotalMoves(0),i(0),j(0);
     ArrayList* m = new ArrayList(3);
     for(int i=0; i<3; i++){
+        m->goToPos(i);
         m->append(new ArrayListC(3));
         m->goToEnd();
-        for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
             m->getValue()->append('*');
         }
     }

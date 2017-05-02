@@ -21,7 +21,6 @@ class minMax
         bool GoalState(ArrayList *m, char ch='O');
         int minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj);
         void PlayBot(ArrayList *m, int level);
-
     private:
         int print;
 };

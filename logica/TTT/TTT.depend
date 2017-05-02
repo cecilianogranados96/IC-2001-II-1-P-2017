@@ -1004,7 +1004,7 @@
 	<time.h>
 	<iostream>
 
-1493677990 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\main.cpp
+1493684194 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\main.cpp
 	"Controladora.h"
 	"Server.h"
 	<sstream>
@@ -1018,22 +1018,22 @@
 	<ArrayList.h>
 	<ArrayListC.h>
 
-1493652518 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\controladora.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\controladora.h
 	"DLinkedListJ.h"
 	"DLinkedListR.h"
 
-1493652539 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistj.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistj.h
 	<stdexcept>
 	<cstddef>
 	"DNodeJ.h"
 
-1493652452 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnodej.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnodej.h
 	"Jugador.h"
 
-1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\jugador.h
+1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\jugador.h
 	"ArrayList.h"
 
-1493675065 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylist.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylist.h
 	"ArrayListC.h"
 	<cstddef>
 	<string>
@@ -1041,50 +1041,50 @@
 1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\naipe.h
 	<iostream>
 
-1493652555 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistr.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistr.h
 	<stdexcept>
 	<cstddef>
 	"DNodeR.h"
 
-1493652415 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnoder.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnoder.h
 	"Ronda.h"
 
-1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\ronda.h
+1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\ronda.h
 	"DLinkedListJ.h"
 	"DLinkedListM.h"
 	"ArrayList.h"
 
-1493652545 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistm.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dlinkedlistm.h
 	<stdexcept>
 	<cstddef>
 	"DNodeM.h"
 
-1493652430 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnodem.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\dnodem.h
 	"Movimiento.h"
 
-1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\movimiento.h
+1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\movimiento.h
 	"Jugador.h"
 	"Baraja.h"
 
-1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\baraja.h
+1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\baraja.h
 	"ArrayList.h"
 
-1493647313 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\server.h
+1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\server.h
 	<windows.h>
 	<winsock2.h>
 	<iostream>
 
-1493676510 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\minmax.h
+1493682278 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\minmax.h
 	<iostream>
 	<ArrayList.h>
 
-1493651595 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\mainp.cpp
+1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\mainp.cpp
 	<vector>
 	<cstdlib>
 	<climits>
 	<ctime>
 
-1493675083 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\arraylist.cpp
+1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\arraylist.cpp
 	"ArrayList.h"
 	<iostream>
 	<stdexcept>
@@ -1093,9 +1093,9 @@
 	<iostream>
 	<stdexcept>
 
-1493652508 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylistn.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylistn.h
 
-1493652654 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\controladora.cpp
+1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\controladora.cpp
 	"ArrayListN.h"
 	"ArrayList.h"
 	<string>
@@ -1140,20 +1140,21 @@
 
 1493650366 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\mimax.h
 
-1493678466 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
+1493684272 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
 	"minMax.h"
 	<iostream>
 	<cstdlib>
 	<climits>
 	<ctime>
+	<stdexcept>
 
-1493652189 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\server.cpp
+1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\server.cpp
 	"Server.h"
 	<iostream>
 
-1493675065 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylistc.h
+1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\arraylistc.h
 
-1493675065 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\arraylistc.cpp
+1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\arraylistc.cpp
 	"ArrayListC.h"
 	<iostream>
 	<stdexcept>
