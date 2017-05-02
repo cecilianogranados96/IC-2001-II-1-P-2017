@@ -44,7 +44,6 @@
 		<Unit filename="include/Server.h" />
 		<Unit filename="include/minMax.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="mainp.cpp" />
 		<Unit filename="src/ArrayList.cpp" />
 		<Unit filename="src/ArrayListC.cpp" />
 		<Unit filename="src/Controladora.cpp" />

@@ -99,16 +99,16 @@ int main(void){
             minMaxTree->display(m);
             string ver;
             if(minMaxTree->LooseState(m)){
-                    cout << "Bot Loose :(" << endl;
+                    cout << "Maquina Perdio :(" << endl;
                     ver = "Loose";
             }else if(minMaxTree->WinState(m)){
-                    cout << "Bot Win:" << endl;
+                    cout << "Maquina Gano:" << endl;
                     ver = "Win";
             }else if (TotalMoves == 9){
                     cout << "Empate" << endl;
                     ver = "Bougth";
             }else{
-                cout << "Sigue" << endl;
+                cout << "Continua el juego" << endl;
                 ver = "Next";
             }
             WSockServer MyServer = WSockServer();

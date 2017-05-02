@@ -5,7 +5,7 @@ WSockServer::WSockServer()
 {
 	hSocket = INVALID_SOCKET;
 	ClientSocket = INVALID_SOCKET;
-	if(WSAStartup(MAKEWORD(2, 0), &wsaData) == 0)		// Check required version
+	if(WSAStartup(MAKEWORD(2, 0), &wsaData) == 0)
 	{
 		if(LOBYTE(wsaData.wVersion < 2))
 		{

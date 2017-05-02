@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+		$.post('Logica/sys.php',{opt: 1},function(data1){
+			console.log(data1);
+		})
+		</script>
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="60" style="overflow-x: hidden; overflow-y: hidden;">
 		<section id="home" class="hero_section">
@@ -74,7 +80,6 @@
 				</div>
 			</div>
 		</section>
-		<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/vendor/owl.carousel.min.js"></script>

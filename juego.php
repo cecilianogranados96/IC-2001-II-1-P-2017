@@ -15,8 +15,7 @@
 			dibujar();
 		})
 		
-			
-			
+		
 		var mensajes = ["Buena jugadada","No eres tan bueno","Eso no me gusto","Debes mejorar","Tienes cerebro","Me gusta","No eres tan bueno","Eso me gusta","Es un reto","Me estas retando","Yo lo hago mejor","Continua","Veremos como acaba esto"];
 		function jugar(x,y){
 			valor = $("#"+x+y).text();
@@ -38,6 +37,10 @@
 								$(div[0]).html(val);
 							}
 							
+							//verificación de ganador
+							
+							verificar();
+							/*
 							$.post('Logica/verificar.php',{opt: 0},function(data1) {
 								if (data1 == "Win"){
 									window.location.href = 'gano.php?opt=win&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
@@ -45,6 +48,7 @@
 									window.location.href = 'gano.php?opt=loose&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
 								}
 							})
+							*/
 						})
 			
 			
@@ -54,13 +58,6 @@
 				$(".dialogo").text("Movimiento Incorrecto :/");
 			}
 		}
-		
-		function verificar(){
-			$.post('Logica/verificar.php',{opt: 0},function(data1) {
-				console.log(data1);
-			})
-		}
-		
 		
 		function dibujar(){
 			$.post('Logica/ver_tablero.php',{opt: 0},function(data1){
@@ -78,8 +75,7 @@
 				}
 			})
 		}
-	
-	
+		
 		function correr(){
 			$(".torso404").css("animation","sway 20s ease infinite");
 			$(".head404").css("animation","headTilt 20s ease infinite");
@@ -102,6 +98,95 @@
 		  correr();
 		  parar();
 		}, 3000);
+		
+		
+		
+		function verificar(){
+			var url_win_X = "gano.php?opt=X&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>";
+			var url_win_O = "gano.php?opt=O&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>";
+			var url_win_EN = "gano.php?opt=1&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>";
+			
+			//Fila
+			if ($("#00").text() == "X" &&  $("#01").text() == "X" && $("#02").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#00").text() == "O" &&  $("#01").text() == "O" && $("#02").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			
+			if ($("#10").text() == "X" &&  $("#11").text() == "X" && $("#12").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#10").text() == "O" &&  $("#11").text() == "O" && $("#12").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			
+			if ($("#20").text() == "X" &&  $("#21").text() == "X" && $("#22").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#20").text() == "O" &&  $("#21").text() == "O" && $("#22").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			//Columnas
+			if ($("#00").text() == "X" &&  $("#10").text() == "X" && $("#20").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#00").text() == "O" &&  $("#10").text() == "O" && $("#20").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+		
+			if ($("#01").text() == "X" &&  $("#11").text() == "X" && $("#21").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#01").text() == "O" &&  $("#11").text() == "O" && $("#21").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			
+			if ($("#02").text() == "X" &&  $("#12").text() == "X" && $("#22").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#02").text() == "O" &&  $("#12").text() == "O" && $("#22").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			//Diagonales
+			if ($("#00").text() == "X" &&  $("#11").text() == "X" && $("#22").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#00").text() == "O" &&  $("#11").text() == "O" && $("#22").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+
+			if ($("#02").text() == "X" &&  $("#11").text() == "X" && $("#20").text() == "X"){
+				console.log("X gana");
+				window.location.href = url_win_X;
+			}else if($("#02").text() == "O" &&  $("#11").text() == "O" && $("#20").text() == "O"){
+				console.log("O gana");
+				window.location.href = url_win_O;
+			}
+			
+			//VERIFICAR EMPATE	
+			if (
+				$("#00").text() != "" && 
+				$("#01").text() != "" && 
+				$("#02").text() != "" && 
+				$("#10").text() != "" && 
+				$("#11").text() != "" && 
+				$("#12").text() != "" && 
+				$("#20").text() != "" && 
+				$("#21").text() != "" && 
+				$("#22").text() != ""){
+				console.log("X gana");
+				window.location.href = url_win_EN;
+			}
+		}
+
 		</script>
     </head>
     <body style="background-color: black;overflow-x: hidden; overflow-y: hidden;" onload="" >

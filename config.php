@@ -16,13 +16,25 @@
 		<center>
 			<h1 style="font-family: PIZARRA; color: white;">Configuración</h1>
 			<br><br>
-			<?php if (!isset($_GET['nombre']) and !isset($_GET['ficha']) ) { ?> 	
+			<?php if (!isset($_GET['nombre']) and !isset($_GET['ficha']) ) { 				
+				session_start();
+				if(isset($_SESSION["nombre"])){
+					$nombre = $_SESSION["nombre"];
+				}else{
+					$nombre = "";
+				}
+				
+
+				?> 	
 				<h1 style="font-family: PIZARRA; color: white;">Digite su nombre</h1>
 				<br><br><br><br>
 				<form action="config.php" method="GET">
-					<input type="text" name="nombre" autocomplete="off" autofocus class='input'>
+					<input type="text"  value="<?php echo $nombre; ?>" name="nombre" autocomplete="off" autofocus class='input'>
 				</form>
-			<?php } if(isset($_GET['nombre']) ) { ?>
+			<?php } if(isset($_GET['nombre']) ) { 
+				session_start();
+				$_SESSION["nombre"] = $_GET['nombre'];
+			?>
 				<h1 style="font-family: PIZARRA; color: white;">En que lugar desea realizar el juego</h1>
 				<br><br><br><br>
 				<a href="config.php?nombre=<?php echo $_GET['nombre']; ?>&pos=1" class="square c">Primero</a>

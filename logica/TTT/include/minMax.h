@@ -2,9 +2,7 @@
 #define MINMAX_H
 #include <iostream>
 #include <ArrayList.h>
-
 using namespace std;
-
 class minMax
 {
     public:

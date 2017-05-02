@@ -9,6 +9,11 @@
         <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/human2.css">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+				<script>
+		$.post('Logica/sys.php',{opt: 0},function(data1){
+			console.log(data1);
+		})
+		</script>
     </head>
     <body style="background-color: black;overflow-x: hidden; overflow-y: hidden;" onload="" >
 	<div id="particles-js" style="z-index:-2;"></div>
@@ -19,13 +24,15 @@
 				<td class="hidden-xs">
 				</td>
 				<td>
-					<?php if ($_GET['opt'] == "win"){?>
+					<?php if ($_GET['opt'] == "X"){?>
 					<h1 class="puntos"><center>Felicidades <?php echo $_GET['nombre']; ?> Ganaste </h1><br>
-					<?php } else { ?>
+					<?php } else if ($_GET['opt'] != "1") { ?>
 					<h1 class="puntos"><center>Lo lamento Perdiste</h1><br>
-					<?php }?>
+					<?php }	if ($_GET['opt'] == "1"){?>
+					<h1 class="puntos"><center>EMPATE <?php echo $_GET['nombre']; ?>, Intentaremos jugar mejor.  </h1><br>
+					<?php } ?>
 					<center>
-						<a href="juego.php?nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>" class="btn btn-success puntos"><h2>Nueva Partida</h2></a>
+						<a href="index.php" class="btn btn-success puntos"><h2>Nueva Partida</h2></a>
 				</td>
 				<td class="hidden-xs">
 					<div class="dialogo">Gracias por jugar</div>
