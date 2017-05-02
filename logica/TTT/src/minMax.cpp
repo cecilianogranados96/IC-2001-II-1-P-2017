@@ -3,7 +3,8 @@
 #include <cstdlib>
 #include <climits>
 #include <ctime>
-
+#include <sstream>
+#include <string>
 minMax::minMax()
 {
     //ctor
@@ -35,6 +36,26 @@ void minMax::display(ArrayList *m) {
    }
    return;
 }
+string minMax::tostring(int val){
+    stringstream ss;
+    ss << val;
+    string str = ss.str();
+    return str;
+}
+
+string minMax::display_r(ArrayList *m) {
+    string x;
+    for(int i=0; i < m->getSize(); i++) {
+        m->goToPos(i);
+        for(int j=0; j < m->getValue()->getSize(); j++){
+            m->getValue()->goToPos(j);
+            x = x + "#" + tostring(i) + tostring(j) +"-"+ m->getValue()->getValue() + "~";
+        }
+   }
+   return x;
+}
+
+
 bool minMax::validMove(ArrayList *m , int &i, int&j) {
      m->goToPos(i);
      m->getValue()->goToPos(j);

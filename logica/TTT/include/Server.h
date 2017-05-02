@@ -8,7 +8,7 @@ using namespace std;
 class WSockServer
 {
 public:
-	WSockServer(string text);
+	WSockServer();
 	~WSockServer();
 	string RunServer(string text);
 	void send2(string thestring);

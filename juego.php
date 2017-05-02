@@ -10,19 +10,76 @@
 		<link rel="stylesheet" href="css/human2.css">
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script>
+		
+		$.post('Logica/config.php',{opt: <?php echo $_GET['pos']; ?>},function(data) {
+			dibujar();
+		})
+		
+			
+			
 		var mensajes = ["Buena jugadada","No eres tan bueno","Eso no me gusto","Debes mejorar","Tienes cerebro","Me gusta","No eres tan bueno","Eso me gusta","Es un reto","Me estas retando","Yo lo hago mejor","Continua","Veremos como acaba esto"];
 		function jugar(x,y){
 			valor = $("#"+x+y).text();
 			if (valor == ""){
 				$(".dialogo").text(mensajes[Math.floor(Math.random()*(mensajes.length-0))]+"...");
 				correr();
-				$.post('Logica/jugar.php',{x: 0,y: 0},function( data ) {
+				$.post('Logica/jugar.php',{i: x,j: y},function(data) {
+					$.post('Logica/ver_tablero.php',{opt: 0},function(data1){
+							var data = data1;
+							console.log(data);
+							var pos = data.split("~");
+							for(x=0;x<9;x++){
+								var div = pos[x].split("-");
+								if (div[1] == "*"){
+									val = "";					
+								}else{
+									val = div[1];
+								}
+								$(div[0]).html(val);
+							}
+							
+							$.post('Logica/verificar.php',{opt: 0},function(data1) {
+								if (data1 == "Win"){
+									window.location.href = 'gano.php?opt=win&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
+								}else if (data1 == "Loose"){
+									window.location.href = 'gano.php?opt=loose&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
+								}
+							})
+						})
+			
+			
 					parar();
 				})
 			}else{
 				$(".dialogo").text("Movimiento Incorrecto :/");
 			}
 		}
+		
+		function verificar(){
+			$.post('Logica/verificar.php',{opt: 0},function(data1) {
+				console.log(data1);
+			})
+		}
+		
+		
+		function dibujar(){
+			$.post('Logica/ver_tablero.php',{opt: 0},function(data1){
+				var data = data1;
+				console.log(data);
+				var pos = data.split("~");
+				for(x=0;x<9;x++){
+					var div = pos[x].split("-");
+					if (div[1] == "*"){
+						val = "";					
+					}else{
+						val = div[1];
+					}
+					$(div[0]).html(val);
+				}
+			})
+		}
+	
+	
 		function correr(){
 			$(".torso404").css("animation","sway 20s ease infinite");
 			$(".head404").css("animation","headTilt 20s ease infinite");
@@ -47,7 +104,7 @@
 		}, 3000);
 		</script>
     </head>
-    <body style="background-color: black;overflow-x: hidden; overflow-y: hidden;">
+    <body style="background-color: black;overflow-x: hidden; overflow-y: hidden;" onload="" >
 	<div id="particles-js" style="z-index:-2;"></div>
 	<center>
 	<h1 style="font-family: PIZARRA; color: white;">Tablero de juego</h1>
@@ -64,21 +121,21 @@
 				</td>
 				<td>
 					<center>
-					<table>
+					<table class="tablero">
 					  <tr id="row1">
-						<td class="square" onclick="jugar('1','1');" id="11">X</td>
-						<td class="square v" onclick="jugar('1','2');" id="12"></td>
-						<td class="square" onclick="jugar('1','3');" id="13">X</td>
+						<td class="square" onclick="jugar('0','0');" id="00">*</td>
+						<td class="square v" onclick="jugar('0','1');" id="01">*</td>
+						<td class="square" onclick="jugar('0','2');" id="02">*</td>
 					  </tr>
 					  <tr id="row2">
-						<td class="square h" onclick="jugar('2',1');" id="21"></td>
-						<td class="square v h" onclick="jugar('2','2');" id="22"></td>
-						<td class="square h" onclick="jugar('2','3');" id="23">X</td>
+						<td class="square h" onclick="jugar('1','0');" id="10">*</td>
+						<td class="square v h" onclick="jugar('1','1');" id="11">*</td>
+						<td class="square h" onclick="jugar('1','2');" id="12">*</td>
 					  </tr>
 					  <tr id="row3">
-						<td class="square" onclick="jugar('3','1');" id="31">O</td>
-						<td class="square v" onclick="jugar('3','2');" id="32">X</td>
-						<td class="square" onclick="jugar(3'','3');" id="33"></td>
+						<td class="square" onclick="jugar('2','0');" id="20">*</td>
+						<td class="square v" onclick="jugar('2','1');" id="21">*</td>
+						<td class="square" onclick="jugar('2','2');" id="22">*</td>
 					  </tr>
 					</table>
 				</td>

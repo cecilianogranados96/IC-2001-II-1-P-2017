@@ -1004,12 +1004,8 @@
 	<time.h>
 	<iostream>
 
-1493684194 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\main.cpp
-	"Controladora.h"
+1493687714 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\main.cpp
 	"Server.h"
-	<sstream>
-	<string>
-	<cstdlib>
 	<iostream>
 	<cstdlib>
 	<climits>
@@ -1017,6 +1013,9 @@
 	<minMax.h>
 	<ArrayList.h>
 	<ArrayListC.h>
+	<sstream>
+	<string>
+	<cstdlib>
 
 1493681094 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\controladora.h
 	"DLinkedListJ.h"
@@ -1069,12 +1068,12 @@
 1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\baraja.h
 	"ArrayList.h"
 
-1493582681 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\server.h
+1493687414 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\server.h
 	<windows.h>
 	<winsock2.h>
 	<iostream>
 
-1493682278 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\minmax.h
+1493687180 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\minmax.h
 	<iostream>
 	<ArrayList.h>
 
@@ -1140,14 +1139,16 @@
 
 1493650366 c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\include\mimax.h
 
-1493685556 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
+1493688781 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\minmax.cpp
 	"minMax.h"
 	<iostream>
 	<cstdlib>
 	<climits>
 	<ctime>
+	<sstream>
+	<string>
 
-1493681094 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\server.cpp
+1493687367 source:c:\xampp\htdocs\ic-2001-ii-1-p-2017\logica\ttt\src\server.cpp
 	"Server.h"
 	<iostream>
 

@@ -22,17 +22,21 @@
 				<form action="config.php" method="GET">
 					<input type="text" name="nombre" autocomplete="off" autofocus class='input'>
 				</form>
-			<?php } if (isset($_GET['nombre'])and !isset($_GET['ficha']) ){ ?> 	
-				<h1 style="font-family: PIZARRA; color: white;">Con que ficha desea jugar</h1>
-				<br><br><br><br>
-				<a href="config.php?nombre=<?php echo $_GET['nombre']; ?>&ficha=X" class="square c">X</a>	
-				<a href="config.php?nombre=<?php echo $_GET['nombre']; ?>&ficha=O" class="square c" style="margin-left: 200px;">O</a>
-			<?php } if(isset($_GET['ficha']) ) { ?>
+			<?php } if(isset($_GET['nombre']) ) { ?>
 				<h1 style="font-family: PIZARRA; color: white;">En que lugar desea realizar el juego</h1>
 				<br><br><br><br>
-				<a href="juego.php?nombre=<?php echo $_GET['nombre']; ?>&ficha=<?php echo $_GET['ficha']; ?>&pos=1" class="square c">Primero</a>
-				<a href="juego.php?nombre=<?php echo $_GET['nombre']; ?>&ficha=<?php echo $_GET['ficha']; ?>&pos=2" class="square c" style="margin-left: 200px;">Segundo</a>
-			<?php } ?>
+				<a href="config.php?nombre=<?php echo $_GET['nombre']; ?>&pos=1" class="square c">Primero</a>
+				<a href="config.php?nombre=<?php echo $_GET['nombre']; ?>&pos=0" class="square c" style="margin-left: 200px;">Segundo</a>
+			<?php if(isset($_GET['pos'])){ ?>
+			<script>
+			/*$.post('Logica/config.php',{opt: <?php echo $_GET['pos']; ?>},function( data ) {
+					console.log(data); */
+					window.location.href = 'juego.php?nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
+			//})
+			</script>
+			<?php	
+			}
+} ?>
 		</center>
     </body>
 	<script src="js/vendor/jquery.ajaxchimp.min.js"></script>

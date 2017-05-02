@@ -12,6 +12,8 @@ class minMax
         ~minMax();
         void BotPlayRand(ArrayList *m);
         void display(ArrayList *m);
+        string display_r(ArrayList *m);
+        string tostring(int val);
         bool validMove(ArrayList *m , int &i, int&j);
         bool WinState (ArrayList *m , char ch = 'O');
         bool DoneGame(ArrayList *m );
@@ -21,6 +23,7 @@ class minMax
         bool GoalState(ArrayList *m, char ch='O');
         int minimax(ArrayList *node, int level, bool IsBot, int &ii, int &jj);
         void PlayBot(ArrayList *m, int level);
+
     private:
         int print;
 };
