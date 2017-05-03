@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
 		})
 		
 		
-		var mensajes = ["Buena jugadada","No eres tan bueno","Eso no me gusto","Debes mejorar","Tienes cerebro","Me gusta","No eres tan bueno","Eso me gusta","Es un reto","Me estas retando","Yo lo hago mejor","Continua","Veremos como acaba esto"];
+		var mensajes = ["Buena jugadada","No eres tan bueno","Eso no me gusto","Debes mejorar","Tienes cerebro","Me gusta","No eres tan bueno","Eso me gusta","Es un reto","Me estas retando","Yo lo hago mejor","Continúa","Veremos como acaba esto"];
 		function jugar(x,y){
 			valor = $("#"+x+y).text();
 			if (valor == ""){
@@ -225,7 +225,7 @@
 					</table>
 				</td>
 				<td class="hidden-xs">
-					<div class="dialogo">Hola mi nombre es Dan...</div>
+					<div class="dialogo">¡Hola, mi nombre es Dan!</div>
 					<div class="newcharacter404">
 						<div class="chair404"></div>
 						<div class="leftshoe404"></div>

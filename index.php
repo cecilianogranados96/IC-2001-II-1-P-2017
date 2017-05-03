@@ -1,4 +1,4 @@
-<html>
+﻿<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +31,7 @@
 						<div class="col-sm-8">
 							<div class="hero_content">
 								<h1>G A T <br>tu forma perfecta de jugar</h1>
-								<p class="mb-25">Es increible moderno y facil de jugar con algoritmos inteligentes y un sistema avanzado que te hara impocible ganar.</p>
+								<p class="mb-25">Es increíblemente moderno y fácil de jugar con algoritmos inteligentes y un sistema avanzado que te hara imposible ganar.</p>
 								<center><a href="config.php" class="btn_default">Jugar</a>
 							</div>
 						</div>
