@@ -1,14 +1,11 @@
-<<<<<<< HEAD
+
 <?php if(!isset($_GET['num'])){
 	$num = 0;
 }else{
 	$num = $_GET['num'];
 } ?>
 
-<html>
-=======
 ﻿<html>
->>>>>>> origin/master
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
