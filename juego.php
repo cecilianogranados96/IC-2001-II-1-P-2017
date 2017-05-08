@@ -1,3 +1,9 @@
+<?php if(!isset($_GET['num'])){
+	$num = 0;
+}else{
+	$num = $_GET['num'];
+} ?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -23,36 +29,12 @@
 				$(".dialogo").text(mensajes[Math.floor(Math.random()*(mensajes.length-0))]+"...");
 				correr();
 				$.post('Logica/jugar.php',{i: x,j: y},function(data) {
-					$.post('Logica/ver_tablero.php',{opt: 0},function(data1){
-							var data = data1;
-							console.log(data);
-							var pos = data.split("~");
-							for(x=0;x<9;x++){
-								var div = pos[x].split("-");
-								if (div[1] == "*"){
-									val = "";					
-								}else{
-									val = div[1];
-								}
-								$(div[0]).html(val);
-							}
-							
-							//verificación de ganador
-							
-							verificar();
-							/*
-							$.post('Logica/verificar.php',{opt: 0},function(data1) {
-								if (data1 == "Win"){
-									window.location.href = 'gano.php?opt=win&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
-								}else if (data1 == "Loose"){
-									window.location.href = 'gano.php?opt=loose&nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>';
-								}
-							})
-							*/
-						})
-			
-			
+					dibujar();
 					parar();
+					if(<?php echo $_GET['pos']; ?> == 1 && <?php echo $num; ?> == 0 ){
+						
+						window.location.href = "juego.php?nombre=<?php echo $_GET['nombre']; ?>&pos=<?php echo $_GET['pos']; ?>&num=1"; 
+					}
 				})
 			}else{
 				$(".dialogo").text("Movimiento Incorrecto :/");
@@ -73,6 +55,7 @@
 					}
 					$(div[0]).html(val);
 				}
+				verificar();
 			})
 		}
 		
