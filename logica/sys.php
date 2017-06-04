@@ -16,11 +16,12 @@
 #
 #
 #########################################################################################
-if ($_POST['opt'] == 1){
+if (isset($_POST['opt'])){
 	system('TTT\bin\Debug\TTT.exe');
-	echo "start";
+	//echo "start";
 }else{
 	$output = shell_exec('taskkill /F /IM "TTT.exe"');
-	echo "down";
+	//echo "down";
+	echo "<script>window.location='../index.php'</script>";
 }
 ?>

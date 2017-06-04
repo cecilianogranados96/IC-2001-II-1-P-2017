@@ -181,11 +181,11 @@
 			<tr>
 				<td class="hidden-xs">
 					<br>
-					<h1 class="puntos"><center>RONDA</h1><br>
-					<h1 class="puntos"><center>0</h1>
+					
+					<h1 class="puntos"><center>I♥GAT</h1>
 					<br>
 					<center>
-						<a href="index.php" class="btn btn-danger puntos"><h2>Terminar</h2></a>
+						<a href="Logica/sys.php" class="btn btn-danger puntos"><h2>Terminar</h2></a>
 					<br>
 				</td>
 				<td>
